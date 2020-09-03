@@ -1,0 +1,2 @@
+#!/bin/bash
+rosrun ros_csv_extraction extract_topic -b left.bag -o out.bag -t /chip8445/odom

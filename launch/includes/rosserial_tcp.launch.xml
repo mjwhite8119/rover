@@ -1,0 +1,12 @@
+<launch>
+
+  <rosparam param="pid">[0.08, 0.01, 0.01]</rosparam>
+  <node pkg="rosserial_python" type="serial_node.py" name="rosserial_python" output="screen">
+    <param name="port" value="tcp" />
+  </node>
+
+  <node pkg="rosserial_python" type="serial_node1.py" name="rosserial_python1" output="screen">
+    <param name="port" value="tcp" />
+  </node>
+
+</launch>
